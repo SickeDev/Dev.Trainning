@@ -1,0 +1,45 @@
+# Estudos de Grafos
+
+Anotações sobre grafos, seus conceitos e como eles podem ser usados na programação.
+
+## O que é um grafo?
+
+Um grafo é uma estrutura de dados formada por vértices (nós) e arestas (ligações entre os nós).
+
+Um exemplo do dia a dia é um mapa de cidades. Cada cidade pode ser um vértice e cada estrada entre elas pode ser uma aresta.
+
+## Principais conceitos
+
+- **Vértice:** representa um elemento do grafo.
+- **Aresta:** representa a ligação entre dois vértices.
+- **Grafo direcionado:** as ligações possuem uma direção.
+- **Grafo não direcionado:** as ligações funcionam nos dois sentidos.
+- **Grafo ponderado:** as ligações possuem um peso, como distância ou custo.
+- **Caminho:** sequência de vértices conectados.
+- **Ciclo:** caminho que começa e termina no mesmo vértice.
+
+## Exemplo simples
+
+Imagine três cidades:
+
+- A está ligada a B.
+- B está ligada a C.
+- A também pode estar ligada diretamente a C.
+
+Essas ligações formam um grafo que pode representar diferentes rotas entre as cidades.
+
+## Onde os grafos são usados?
+
+- Mapas e sistemas de GPS.
+- Redes sociais.
+- Redes de computadores.
+- Rotas de entrega.
+- Sistemas de recomendação.
+- Jogos e inteligência artificial.
+
+
+## Resumo
+
+Grafos servem para representar elementos que possuem algum tipo de conexão. Entender essa estrutura ajuda a compreender como funcionam mapas, redes e vários outros sistemas.
+
+Este README faz parte das minhas anotações de estudo em estruturas de dados.
