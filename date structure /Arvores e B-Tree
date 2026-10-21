@@ -1,0 +1,55 @@
+# Estudos de Árvores e B-Tree
+
+Anotações sobre estruturas de dados em árvore e como elas organizam informações.
+
+## O que é uma árvore?
+
+Uma árvore é uma estrutura de dados formada por nós conectados de maneira hierárquica.
+
+Um exemplo simples é a estrutura de pastas de um computador. Uma pasta pode conter outras pastas, que por sua vez podem conter arquivos.
+
+## Principais conceitos
+
+- **Raiz:** primeiro nó da árvore.
+- **Nó:** elemento que guarda uma informação.
+- **Pai:** nó que possui ligações com outros nós abaixo dele.
+- **Filho:** nó ligado a um nó pai.
+- **Folha:** nó que não possui filhos.
+- **Altura:** comprimento do caminho mais longo da raiz até uma folha, conforme a convenção utilizada.
+
+## Árvore binária
+
+Uma árvore binária é uma árvore em que cada nó pode ter, no máximo, dois filhos: esquerdo e direito.
+
+Ela pode ser usada para organizar dados e implementar estruturas de busca.
+
+## O que é uma B-Tree?
+
+A B-Tree, ou árvore B, é uma estrutura de dados que permite organizar muitos valores em cada nó.
+
+Diferentemente de uma árvore binária comum, um nó de uma B-Tree pode armazenar várias chaves e possuir vários filhos.
+
+Ela é muito utilizada em sistemas que precisam acessar dados armazenados em disco, como bancos de dados e sistemas de arquivos.
+
+## Diferença básica
+
+- **Árvore binária:** cada nó possui, no máximo, dois filhos.
+- **B-Tree:** cada nó pode possuir vários filhos e armazenar várias chaves, respeitando as regras da estrutura.
+
+A B-Tree mantém os dados organizados e balanceados, ajudando a reduzir a quantidade de acessos necessários para encontrar informações.
+
+## Onde essas estruturas são usadas?
+
+- Árvores de diretórios e arquivos.
+- Árvores de busca.
+- Organização de dados.
+- Índices de bancos de dados.
+- Sistemas de arquivos.
+
+
+
+## Resumo
+
+Árvores organizam informações de maneira hierárquica. A B-Tree é uma estrutura especialmente útil quando precisamos organizar grandes quantidades de dados e realizar buscas com eficiência.
+
+Este README faz parte das minhas anotações de estudo em estruturas de dados.
