@@ -1,0 +1,148 @@
+# Estudos de Java — Programação Orientada a Objetos
+
+Anotações dos conceitos básicos de Programação Orientada a Objetos (POO) em Java, com exemplos que estou usando para praticar.
+
+## 1. Classes e objetos
+
+Uma classe funciona como um modelo para criar objetos.
+
+Por exemplo, a classe `Carro` pode definir as características e ações de um carro. Um objeto seria um carro específico criado a partir desse modelo.
+
+```java
+public class Carro {
+    String modelo;
+    int velocidade;
+}
+```
+
+Criando um objeto:
+
+```java
+Carro carro1 = new Carro();
+carro1.modelo = "Civic";
+carro1.velocidade = 0;
+```
+
+## 2. Métodos
+
+Métodos são blocos de código que executam alguma ação.
+
+```java
+public void acelerar() {
+    velocidade += 10;
+}
+```
+
+Nesse exemplo, o método `acelerar()` aumenta a velocidade em 10.
+
+## 3. Construtores
+
+O construtor é executado quando criamos um objeto. Ele pode receber parâmetros para definir os valores iniciais dos atributos.
+
+```java
+public Carro(String modelo) {
+    this.modelo = modelo;
+}
+```
+
+Criando um objeto com o construtor:
+
+```java
+Carro carro1 = new Carro("Civic");
+```
+
+O `this.modelo` representa o atributo do objeto, enquanto `modelo` representa o parâmetro recebido pelo construtor.
+
+## 4. Encapsulamento
+
+Encapsulamento é uma forma de proteger os dados de um objeto e controlar como eles podem ser acessados ou modificados.
+
+Para isso, podemos usar `private` nos atributos e criar métodos públicos para acessá-los.
+
+```java
+public class Carro {
+    private String modelo;
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+}
+```
+
+- `private`: restringe o acesso direto ao atributo.
+- `getModelo()`: retorna o modelo.
+- `setModelo()`: permite alterar o modelo.
+
+O uso de métodos também permite validar os valores antes de modificar um atributo.
+
+## Exemplo completo
+
+```java
+public class Carro {
+    private String modelo;
+    private int velocidade;
+
+    public Carro(String modelo) {
+        this.modelo = modelo;
+        this.velocidade = 0;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getVelocidade() {
+        return velocidade;
+    }
+
+    public void acelerar() {
+        velocidade += 10;
+    }
+}
+```
+
+## Classe Main
+
+A classe `Main` é onde podemos criar objetos e testar o funcionamento do programa.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Carro carro1 = new Carro("Civic");
+
+        carro1.acelerar();
+
+        System.out.println(carro1.getModelo());
+        System.out.println(carro1.getVelocidade());
+    }
+}
+```
+
+Resultado:
+
+```text
+Civic
+10
+```
+
+## O que estou estudando
+
+- [ ] Classes e objetos.
+- [ ] Atributos e parâmetros.
+- [ ] Métodos com e sem retorno.
+- [ ] Construtores.
+- [ ] Palavra-chave `this`.
+- [ ] Modificadores de acesso, como `public` e `private`.
+- [ ] Getters e setters.
+- [ ] Encapsulamento.
+- [ ] Separação entre classes e `Main`.
+
+## Resumo
+
+A Programação Orientada a Objetos permite organizar o código em classes e objetos. Os métodos definem ações, os construtores inicializam os objetos e o encapsulamento ajuda a proteger os dados.
+
+Essas são minhas anotações e exemplos de prática enquanto estudo Java.
