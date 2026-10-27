@@ -1,0 +1,113 @@
+# Java — Agenda de Contatos
+
+## Sobre o projeto
+
+Exercício de Java para praticar programação orientada a objetos (POO).
+
+O programa funciona como uma agenda de contatos pelo terminal, permitindo cadastrar nome, telefone e e-mail, listar os contatos, buscar pelo nome e remover registros.
+
+## Funcionalidades
+
+- Adicionar contatos.
+- Listar os contatos cadastrados.
+- Buscar contato pelo nome.
+- Remover contato pelo nome.
+- Ignorar diferenças entre letras maiúsculas e minúsculas nas buscas.
+- Tratar entradas inválidas no menu.
+
+## Estrutura do projeto
+
+- `Contato.java`: representa um contato e guarda seus dados.
+- `Agenda.java`: gerencia a lista de contatos.
+- `Main.java`: contém o menu e a interação com o usuário.
+
+## O que aprendi
+
+### 1. Classes, objetos e construtores
+
+Aprendi a separar o programa em classes com responsabilidades diferentes.
+
+A classe `Contato` representa cada contato, enquanto `Agenda` gerencia os contatos cadastrados e `Main` executa o programa.
+
+Também pratiquei a criação de objetos usando construtores.
+
+### 2. Encapsulamento
+
+Utilizei atributos `private` para proteger os dados e métodos `get` e `set` para consultar e alterar as informações dos contatos.
+
+### 3. `@Override` e `toString()`
+
+Essa foi uma das partes que eu ainda não conhecia.
+
+O `toString()` permite definir como um objeto será exibido em texto. No exercício, personalizei a exibição para mostrar nome, telefone e e-mail.
+
+O `@Override` indica que estou sobrescrevendo um método herdado da classe `Object`.
+
+### 4. `List` e `ArrayList`
+
+Aprendi a importar e utilizar `List` e `ArrayList` para armazenar vários contatos em uma única lista.
+
+- `List`: interface que define operações de uma lista.
+- `ArrayList`: implementação utilizada para guardar e manipular os contatos.
+
+Também pratiquei adicionar elementos com `add()` e verificar se a lista está vazia com `isEmpty()`.
+
+### 5. `Iterator`
+
+Aprendi a utilizar `Iterator` para percorrer a lista e remover um contato com `it.remove()`.
+
+Isso evita modificar diretamente a lista durante sua iteração com um `for-each`, situação que pode causar `ConcurrentModificationException`.
+
+### 6. Busca e comparação de textos
+
+Utilizei `equalsIgnoreCase()` para buscar contatos sem diferenciar letras maiúsculas e minúsculas.
+
+Também pratiquei o retorno de objetos com `return contato` e o uso de `return null` quando nenhum contato é encontrado.
+
+### 7. `Scanner` e entrada de dados
+
+Utilizei `Scanner` para receber informações digitadas pelo usuário, como nome, telefone, e-mail e opção do menu.
+
+Também aprendi a usar `nextInt()` para ler números e `nextLine()` para ler textos e consumir a quebra de linha pendente após a leitura numérica.
+
+### 8. Tratamento de erros
+
+Utilizei `try/catch` com `InputMismatchException` para tratar entradas inválidas no menu.
+
+Quando o usuário digita um texto em vez de um número, o programa informa o erro e permite tentar novamente.
+
+### 9. Estruturas de controle
+
+Pratiquei algumas estruturas importantes do Java:
+
+- `do-while`: mantém o menu em execução até a opção de saída.
+- `switch-case`: executa a operação escolhida.
+- `for-each`: percorre os contatos cadastrados.
+- `if/else`: verifica condições, como lista vazia ou contato encontrado.
+- `break`: encerra um caso do `switch`.
+- `continue`: volta ao início do laço após uma entrada inválida.
+
+## Tecnologias e conceitos praticados
+
+- Java
+- Programação Orientada a Objetos (POO)
+- Encapsulamento
+- Construtores
+- Getters e setters
+- Collections (`List` e `ArrayList`)
+- `Iterator`
+- Sobrescrita de métodos (`@Override`)
+- Manipulação de strings
+- Estruturas de repetição e decisão
+- Tratamento de exceções
+- Entrada de dados pelo terminal
+
+## Observação
+
+Os contatos ficam armazenados em memória durante a execução. Ao fechar o programa, os dados não são mantidos, pois o exercício ainda não utiliza arquivos ou banco de dados.
+
+## Objetivo
+
+Praticar Java, entender melhor como as classes trabalham juntas e aprender a manipular listas de objetos em um programa simples.
+
+Projeto desenvolvido como parte dos meus estudos de programação.
